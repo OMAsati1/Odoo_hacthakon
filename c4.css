@@ -1,0 +1,125 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding: 15px 30px;
+}
+
+.top-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.save-btn {
+  color: #4caf50;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.discard-btn {
+  color: red;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 40px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+.left, .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"], select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  background-color: #222;
+  color: white;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+.remove-tag {
+  margin-left: 5px;
+  color: red;
+  cursor: pointer;
+}
+
+.profile-photo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.profile-photo-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #666;
+}
+
+#photoUpload {
+  color: white;
+}
+
+#removePhoto {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}

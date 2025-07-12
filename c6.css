@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.request-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 10px 5px 0 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#back{
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: #e12b2b;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 6px;
+  color: #d2ead7
+}

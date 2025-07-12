@@ -1,0 +1,177 @@
+/* === Base layout === */
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #444;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* === Profile content === */
+.user-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 40px;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex-shrink: 0;
+}
+
+#profilePhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+#requestBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+#requestBtn:hover {
+  background-color: #0069d9;
+}
+
+/* === Modal === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 550px;
+  max-width: 90%;
+  color: white;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
+/* === Skill selection === */
+.multi-skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.multi-skill-box label {
+  background-color: #333;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.multi-skill-box label:hover {
+  background-color: #444;
+}
+
+.multi-skill-box input[type="checkbox"] {
+  accent-color: #4caf50;
+}
+
+/* === Message box === */
+textarea {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 80px;
+  width: 100%;
+  margin: 10px 0;
+  font-family: inherit;
+}
+
+/* === Submit button === */
+#submitRequest {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+#submitRequest:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .user-profile {
+    flex-direction: column;
+  }
+  
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}

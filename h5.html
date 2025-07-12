@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="c5.css" />
+</head>
+<body>
+  <header>
+    <h1>Skill Swap Platform</h1>
+    <nav>
+      <a href="#">Swap request</a>
+      <a href="h.html">Home</a>
+      <img src="https://www.gravatar.com/avatar?d=identicon" alt="Profile" class="profile-avatar" />
+    </nav>
+  </header>
+
+  <main class="user-profile">
+    <div class="left">
+      <button id="requestBtn">Request</button>
+      <h2 id="userName">Not Logged In</h2>
+      <p><strong>Skills Offered:</strong> Python, JavaScript</p>
+      <p><strong>Skills Wanted:</strong> Graphic Design, UI/UX</p>
+      <p><strong>Rating and Feedback:</strong> 4.5/5</p>
+    </div>
+
+    <div class="right">
+      <img id="profilePhoto" src="https://www.gravatar.com/avatar?d=identicon" alt="User Photo">
+    </div>
+  </main>
+
+  <!-- Request Modal -->
+  <div class="modal" id="requestModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Send a Swap Request</h3>
+
+      <label>Choose one or more of your offered skills</label>
+      <div class="multi-skill-box" id="yourSkillBox"></div>
+
+      <label>Choose one or more of their wanted skills</label>
+      <div class="multi-skill-box" id="theirSkillBox"></div>
+
+      <label>Message</label>
+      <textarea id="messageBox" rows="4" placeholder="Write a message..."></textarea>
+
+      <button id="submitRequest">Submit</button>
+    </div>
+  </div>
+
+  <!-- 🔗 External Script -->
+  <script src="user.js"></script>
+</body>
+</html>

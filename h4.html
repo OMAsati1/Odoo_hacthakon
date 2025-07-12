@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Profile - Skill Swap Platform</title>
+  <link rel="stylesheet" href="c4.css" />
+</head>
+<body>
+  <header>
+    <h1>Skill Swap Platform</h1>
+    <div class="top-menu">
+      <button class="save-btn">Save</button>
+      <button class="discard-btn">Discard</button>
+      <a href="h6.html" class="nav-link">Swap Request</a>
+      <a href="h.html" class="nav-link">Home</a>
+      <img id="profileAvatar" src="https://www.gravatar.com/avatar?d=identicon" alt="User" class="profile-avatar" />
+    </div>
+  </header>
+
+  <main class="profile-container">
+    <form id="profileForm">
+      <div class="left">
+        <label>Name</label>
+        <input type="text" id="name" />
+
+        <label>Location</label>
+        <input type="text" id="location" />
+
+        <label>Skills Offered</label>
+        <select id="skillsOffered" multiple>
+          <option value="Graphic Design">Graphic Design</option>
+          <option value="Video Editing">Video Editing</option>
+          <option value="Web Development">Web Development</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="UI/UX">UI/UX</option>
+          <option value="C++">C++</option>
+        </select>
+
+        <label>Availability</label>
+        <select id="availability">
+          <option value="">Select...</option>
+          <option value="weekends">Weekends</option>
+          <option value="evenings">Evenings</option>
+          <option value="anytime">Anytime</option>
+        </select>
+
+        <label>Profile Visibility</label>
+        <select id="visibility">
+          <option value="">Select...</option>
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+      </div>
+
+      <div class="right">
+        <label>Skills Wanted</label>
+        <select id="skillsWanted" multiple>
+          <option value="Graphic Design">Graphic Design</option>
+          <option value="Video Editing">Video Editing</option>
+          <option value="Web Development">Web Development</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="UI/UX">UI/UX</option>
+          <option value="C++">C++</option>
+        </select>
+
+        <label>Upload Profile Photo</label>
+        <input type="file" id="photoUpload" accept="image/*" />
+        <div class="profile-photo-box">
+          <img id="photoPreview" src="https://www.gravatar.com/avatar?d=identicon" alt="Preview" />
+        </div>
+        <button type="button" id="removePhoto">Remove Photo</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="profile.js"></script>
+</body>
+</html>

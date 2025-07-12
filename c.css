@@ -1,0 +1,140 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.top-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#availability, #searchBox {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+
+.profile-card {
+  border: 1px solid #444;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #1a1a1a;
+}
+
+.profile-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #d32f2f;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: #333;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.skills-title {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.skills-wanted-title {
+  color: #03a9f4;
+  font-weight: bold;
+}
+
+.request-btn {
+  background-color: #006d77;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px;
+}
+
+.pagination button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #00bcd4;
+}
